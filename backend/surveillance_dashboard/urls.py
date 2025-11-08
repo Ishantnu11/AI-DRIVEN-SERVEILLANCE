@@ -1,0 +1,13 @@
+"""
+URL configuration for surveillance_dashboard project.
+"""
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/', include('app.urls')),
+    path('', include('app.urls')),
+]
+
+
